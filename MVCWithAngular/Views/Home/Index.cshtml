@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="angualarModule">
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js"></script>
+    <script src="~/Scripts/AngularController.js"></script>
+</head>
+<body>
+    <form ng-controller="indexController">
+        <h2>I am Parent Page</h2>
+        <fieldset>
+            <legend>Getting data from controller</legend>
+            <input type="text" ng-model="name" />
+        </fieldset>
+        <a href="/#/firstPage">Call First Page</a>
+        <br />
+        <a href="/#/secondPage">Call Second Page</a>
+        <div ng-view></div>
+    </form>
+</body>
+</html>
